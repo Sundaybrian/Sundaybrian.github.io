@@ -1,5 +1,81 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Marvel', sans-serif;
     font-family: 'Play', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'Play', sans-serif;
+    min-width: 320px;
+    color: green;
+    background: #1e1e1e;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+
+nav {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 187, 51, 0.8);
+
+}
+
+nav #brand {
+    text-decoration: none;
+    color: #fb3;
+}
+
+#nav-links ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#nav-links ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+#nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0px 20px;
+    text-transform: capitalize;
+
+}
+
+section{
+    padding:6px;
+
+}
+
+#welcome-section{
+    margin-top: 65px;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
 }
