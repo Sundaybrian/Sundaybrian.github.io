@@ -69,9 +69,15 @@ nav #brand {
 }
 
 section{
-    padding:6px;
+    padding:8px;
 
 }
+
+.important{
+    height: 60vh;
+    padding-bottom: 25px;
+}
+
 
 #welcome-section{
     margin-top: 65px;
@@ -99,4 +105,37 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+section#projects{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,(2,1fr));
+    grid-row-gap: 15px;
+    background: #eee;
+}
+
+section#projects .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    grid-gap: 10px;
+}
+
+
+section .row .card{
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    width: 100%;
+}
+
+section .row .card span{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background: #1e1e1e;
+    opacity: .7;
+    height: 25px;
+    
 }
