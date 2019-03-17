@@ -74,7 +74,7 @@ section{
 }
 
 .important{
-    height: 60vh;
+    /* height: 60vh; */
     padding-bottom: 25px;
 }
 
@@ -128,6 +128,33 @@ section .row .card{
     width: 100%;
 }
 
+section .row .card > .overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg,rgba(60, 64, 143, 0.5),rgba(91,97,207,0.95)) ;
+    visibility: hidden;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 5px;
+    justify-content: center; 
+    color: #eee;
+
+}
+
+.overlay > p{
+    text-align: center;
+}
+
+.overlay > hr.line{
+    border: 1px solid #fb3;
+    width: 90%;
+    margin: 20px 0px 20px 0px;
+}
+
 section .row .card span{
     position:absolute;
     bottom: 0;
@@ -137,5 +164,23 @@ section .row .card span{
     background: #1e1e1e;
     opacity: .7;
     height: 25px;
+    color: ;
     
 }
+
+section .row .card:hover{
+    /* opacity: 0.5;
+    background: #eee; */
+    visibility: hidden;
+
+}
+
+section .row .card:hover > .overlay{
+    visibility: visible;
+    background: linear-gradient(135deg,rgba(60, 64, 143, 0.5),rgba(91,97,207,0.95)) ;
+    opacity: 1;
+
+}
+
+
+
