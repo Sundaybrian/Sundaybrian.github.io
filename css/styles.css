@@ -77,5 +77,26 @@ section{
     margin-top: 65px;
     height: 100vh;
     width: 100%;
-    background: #fff;
+    background:url("https://scontent.fnbo4-1.fna.fbcdn.net/v/t1.0-9/20229405_1706669236029083_6279413777970904779_n.jpg?_nc_cat=104&_nc_eui2=AeHz1dLQxBksls3Zd_Q0wCMPzLLSFWF2JvI8XnImoyIO2hs7i90zq6X7lD9r9am4C2rvafPdm7gGle00-3u3jeGrFpmKzLqgEiTGJ-dwrcn4Xg&_nc_ht=scontent.fnbo4-1.fna&oh=184bdfc6b0133072d40396367076899f&oe=5D06B957");
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#welcome-img{
+    max-width:240px;
+}
+
+#welcome-img img{
+    border-radius: 60%;
+}
+
+#welcome-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
