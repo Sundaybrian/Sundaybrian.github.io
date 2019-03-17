@@ -107,6 +107,10 @@ section{
     justify-content: space-around;
 }
 
+section header{
+    justify-self:center; 
+}
+
 section#projects{
     display: grid;
     grid-template-rows: repeat(auto-fit,(2,1fr));
