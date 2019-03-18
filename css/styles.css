@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'Marvel', sans-serif;
     font-family: 'Play', sans-serif;
     padding: 0;
     margin: 0;
@@ -12,6 +11,10 @@ body {
     min-width: 320px;
     color: green;
     background: #1e1e1e;
+}
+
+p{
+    font-family: 'Marvel', sans-serif;
 }
 
 img {
@@ -313,6 +316,37 @@ section#about >#random-facts{
     display: inline-block;
     max-width: 320px;
   
+}
+
+/* contact section */
+
+section#contact{
+    display:grid;
+    grid-template-rows: repeat(2,auto);
+    grid-row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.social{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.social a{
+    cursor: pointer;
+    padding: 0px 20px;
+
+}
+
+
+i.fa{ 
+    font-size: 28px;
+    color: #00ff8c;
 }
 
 
