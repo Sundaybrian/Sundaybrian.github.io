@@ -10,11 +10,14 @@ body {
     font-family: 'Play', sans-serif;
     min-width: 320px;
     color: green;
-    background: #1e1e1e;
+    background: white;
+   
 }
 
 p{
     font-family: 'Marvel', sans-serif;
+    font-size: 18px;
+    color: #00ff8c;
 }
 
 img {
@@ -39,15 +42,16 @@ nav {
     justify-content: space-between;
     padding: 5px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: #038349;
     z-index: 1;
-    border-bottom: 1px solid rgba(255, 187, 51, 0.8);
 
 }
 
 nav #brand {
     text-decoration: none;
-    color: #fb3;
+    color: floralwhite;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 #nav-links ul {
@@ -80,6 +84,8 @@ nav #brand {
 }
 
 section{
+
+    clip-path:polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
     padding:65px 20px 65px 20px ;
 
 }
@@ -87,18 +93,40 @@ section{
 
 
 #welcome-section{
-    margin-top: 65px;
+
+    margin-top: 60px;
     height: 100vh;
     width: 100%;
-    background:url("https://scontent.fnbo4-1.fna.fbcdn.net/v/t1.0-9/20229405_1706669236029083_6279413777970904779_n.jpg?_nc_cat=104&_nc_eui2=AeHz1dLQxBksls3Zd_Q0wCMPzLLSFWF2JvI8XnImoyIO2hs7i90zq6X7lD9r9am4C2rvafPdm7gGle00-3u3jeGrFpmKzLqgEiTGJ-dwrcn4Xg&_nc_ht=scontent.fnbo4-1.fna&oh=184bdfc6b0133072d40396367076899f&oe=5D06B957");
+    background:url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
     background-attachment: scroll;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    color: white;
+    clip-path: none;
+    /* background: white; */
 }
 
+#welcome-content h1{
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    text-transform: uppercase;
+
+}
+
+#welcome-content h3{
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Marvel', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    
+}
 #welcome-img{
     max-width:240px;
 }
@@ -121,6 +149,7 @@ section header{
 
 /* project sections */
 section#projects{
+    clip-path:polygon(0% 0%, 100% 0%, 100% 96%, 0% 100%);
     display: grid;
     grid-template-rows: repeat(auto-fit,(2,1fr));
     grid-row-gap: 15px;
@@ -327,6 +356,7 @@ section#contact{
     justify-items: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 65px;
 
 }
 
