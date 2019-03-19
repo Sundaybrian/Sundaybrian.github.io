@@ -9,15 +9,15 @@ html,
 body {
     font-family: 'Raleway', sans-serif;
     min-width: 320px;
-    color: green;
     background: white;
    
 }
 
 p{
     font-family: 'Marvel', sans-serif;
-    font-size: 18px; 
+    font-size: 1.3em; 
     font-weight: 300;
+    color:#951c49;
    
 }
 
@@ -28,7 +28,7 @@ img {
 }
 
 h1 {
-    font-size: 1.7em;
+    font-size: 1.75em;
 }
 
 
@@ -40,32 +40,43 @@ nav {
     min-height: 62px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 5px;
     width: 100%;
-    background: #222222;
-    opacity: 0.95;
+    background: #1e1e1e;
     z-index: 1;
 
 }
 
-nav #brand {
+nav #brand{
+    width: 30%;
+}
+
+nav #brand a{
     text-decoration: none;
-    color: floralwhite;
+    color: #951c49;
     font-size: 24px;
     font-weight: 600;
+    
+}
+
+#nav-links{
+    width: 60%;
 }
 
 #nav-links ul {
+    /* background: #038349; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 
 #nav-links ul li {
     list-style: none;
     display: inline-block;
-
+    font-size: 18px;
+    
 }
 
 #nav-links ul li a {
@@ -74,6 +85,21 @@ nav #brand {
     display: block;
     padding: 0px 20px;
     text-transform: capitalize;
+    border-left:solid #951c49; 
+
+}
+
+nav:hover{
+  /* background: #038349; */
+ 
+}
+
+ nav:hover #nav-links ul li a:hover {
+    border-bottom: solid #f5f5f5;
+    text-transform: uppercase;
+    border-left: 0;
+    /* color:#951c49 ; */
+    color: #00ff8c;
 
 }
 
@@ -83,6 +109,7 @@ nav #brand {
 
 .grey{
     background-color: lightgrey;
+    
 }
 
 section{
@@ -121,12 +148,19 @@ section{
 
 }
 
+
+#welcome-content h1 span{
+   color: #951c49;
+
+}
+
 #welcome-content h3{
     font-size: 28px;
     font-weight: 400;
     font-style: italic;
     font-family: 'Marvel', sans-serif;
     text-align: center;
+    /* color: #fb3; */
     text-shadow: 2px 2px 8px #111;
     
 }
@@ -148,9 +182,10 @@ section{
 section header{
     justify-self:center; 
     margin: 10px 0px 10px 0px;
+    color:#557c3e;
 }
 
-/* project sections */
+/******************8 project sections************************ */
 section#projects{
     display: grid;
     grid-template-rows: repeat(auto-fit,(2,1fr));
@@ -306,7 +341,7 @@ section#about > #brief{
     margin-bottom: 10px;
 }
 
-#brief h4{
+#brief header h4{
    text-align: center;
 }
 
@@ -315,12 +350,20 @@ section#about > #brief{
     border-radius: 50%;
     max-width: 200px;
     max-height: 200px;
-    box-shadow:0px 10px 20px rgba(255,255,255,0.1),0 6px 6px rgba(255, 255, 255, 0.2);
+    /* box-shadow:0px 10px 20px rgba(255,255,255,0.1),0 6px 6px rgba(255, 255, 255, 0.2); */
+    box-shadow: 0 1px 5px 3px #f5f5f5;
 
 }
 
 #brief-content{
-    /* text-align: center; */
+    margin-top: 10px;
+    text-align: center;
+    color: #557c3e;
+    color: #f5f5f5;
+    color:#951c49;
+    font-weight: bold;
+    text-shadow: 1px 1px 20px #951c49;
+    line-height: 1.5em;
     /* display: grid;
     grid-template-rows: repeat(2,auto);
     grid-gap:5px; 
