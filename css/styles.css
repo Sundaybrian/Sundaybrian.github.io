@@ -17,7 +17,6 @@ p{
     font-family: 'Marvel', sans-serif;
     font-size: 1.3em; 
     font-weight: 300;
-    color:#951c49;
    
 }
 
@@ -359,28 +358,38 @@ section#about > #brief{
     margin-bottom: 10px;
 }
 
-#brief header h4{
+section#about header h4{
    text-align: center;
+   text-shadow: 0 1px 5px 3px #02864b;
 }
 
+section#about #brief h3 span{
+    color: #951c49;
+    
+ }
 
 #brief > #brief-img img{
-    border-radius: 50%;
+    border-radius: 100%;
     max-width: 200px;
     max-height: 200px;
-    /* box-shadow:0px 10px 20px rgba(255,255,255,0.1),0 6px 6px rgba(255, 255, 255, 0.2); */
-    box-shadow: 0 1px 5px 3px #f5f5f5;
+    box-shadow:0px 10px 20px rgba(255,255,255,0.1),0 6px 6px rgba(255, 255, 255, 0.2);
 
 }
 
-#brief-content{
+#brief-content p{
+   /* padding-left: 8px; */
+   text-align: center;
+
+}
+
+#brief-content p{
     margin-top: 10px;
-    text-align: center;
+    /* text-align: center; */
     color: #557c3e;
     color: #f5f5f5;
     color:#951c49;
-    font-weight: bold;
-    text-shadow: 1px 1px 20px #951c49;
+    font-weight: bolder;
+    text-shadow: 0px 1px 4px #1e1e1e;
     line-height: 1.5em;
     /* display: grid;
     grid-template-rows: repeat(2,auto);
@@ -416,7 +425,7 @@ section#about >#random-facts{
   
 }
 
-/* contact section */
+/************** contact section *********************************/
 
 section#contact{
     display:grid;
@@ -430,11 +439,12 @@ section#contact{
 }
 
 
-.social{
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
+.job{
+    color: #038349;
+   
 }
+
+
 
 .social a{
     cursor: pointer;
