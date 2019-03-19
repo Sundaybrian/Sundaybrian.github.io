@@ -119,7 +119,7 @@ section{
 
 }
 
-
+/* **********welcome section***************** */
 
 #welcome-section{
 
@@ -185,10 +185,10 @@ section header{
     color:#557c3e;
 }
 
-/******************8 project sections************************ */
+/****************** project sections************************ */
 section#projects{
     display: grid;
-    grid-template-rows: repeat(auto-fit,(2,1fr));
+    grid-template-rows: repeat(2,auto);
     grid-row-gap: 15px;
     clip-path:polygon(0 0%, 100% 0%, 100% 96%, 0% 100%);
 }
@@ -196,69 +196,82 @@ section#projects{
 section#projects .row{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,auto));
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 
-section .row .card{
+section .row .project-tile{
     position: relative;
     /* border: 1px solid #fb4; */
     /* border-radius: 15px; */
     width: 100%;
+  
    
 }
 
-section .row .card > .overlay{
+ .project-tile:hover{
+    box-shadow: 0px 3px 5px 2px #111;
+   
+}
+
+section .row .project-tile > .overlay{
     position: absolute;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg,rgba(60, 64, 143, 0.5),rgba(91,97,207,0.5)) ;
     visibility: hidden;
     display: flex;
     flex-direction:column;
     align-items: center;
     padding: 5px;
     justify-content: center; 
-    color: #00ff8c;
-
+    
 }
 
 .overlay > p{
+    color: #f5f5f5;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .overlay > hr.line{
-    border: 1px solid #fb3;
-    width: 90%;
+    border: 1px solid #00ff8c;
+    width: 50%;
     margin: 20px 0px 20px 0px;
 }
 
-section .row .card span{
+section .row .project-tile span{
     position:absolute;
     bottom: 0;
     right: 0;
     width: 100%;
     text-align: center;
-    background: linear-gradient(135deg, rgb(74, 13, 143), rgb(250, 42, 143));
-    /* opacity: .7; */
+    
+    /* background: linear-gradient(135deg, rgb(74, 13, 143), rgb(250, 42, 143)); */
+    background:#111;
+    opacity: .95;
     height: 25px;
     color: #00ff8c;
+    text-transform: capitalize;
+    
     
 }
 
-section .row .card:hover{
-    /* opacity: 0.5;
-    background: #eee; */
-    visibility: hidden;
+section .row .project-tile:hover{
+    /* visibility: hidden; */
+    opacity: .9;
 
 }
 
-section .row .card:hover > .overlay{
+section .row .project-tile:hover span{
+    visibility: hidden;
+}
+
+section .row .project-tile:hover > .overlay{
     visibility: visible;
-    background: linear-gradient(135deg,rgba(60, 64, 143, 0.5),rgba(91,97,207,0.95)) ;
-    opacity: 1;
+    background: #111;
+    opacity: .9;
 
 }
 
