@@ -36,10 +36,13 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 62px;
+    min-height: 66px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 5px;
     width: 100%;
@@ -69,6 +72,7 @@ nav #brand a{
     display: flex;
     justify-content: space-evenly;
 
+
 }
 
 #nav-links ul li {
@@ -89,9 +93,14 @@ nav #brand a{
 }
 
 nav:hover{
-  /* background: #038349; */
+  border-bottom:1px solid #00ff8c; 
  
 }
+
+/* nav:hover #brand a{
+    color: #02864b;
+    font-weight:400;
+} */
 
  nav:hover #nav-links ul li a:hover {
     border-bottom: solid #f5f5f5;
@@ -366,6 +375,7 @@ section#about header h4{
 section#about #brief h3 span{
     color: #951c49;
     
+    
  }
 
 #brief > #brief-img img{
@@ -376,28 +386,29 @@ section#about #brief h3 span{
 
 }
 
-#brief-content p{
-   /* padding-left: 8px; */
-   text-align: center;
-
+#brief-content {
+   padding: 0 35px 0 35px; 
+   border-bottom: 2px ridge;
+  
 }
 
 #brief-content p{
     margin-top: 10px;
-    /* text-align: center; */
-    color: #557c3e;
-    color: #f5f5f5;
+    padding-bottom: 35px;
     color:#951c49;
     font-weight: bolder;
     text-shadow: 0px 1px 4px #1e1e1e;
     line-height: 1.5em;
-    /* display: grid;
-    grid-template-rows: repeat(2,auto);
-    grid-gap:5px; 
-    border-left:solid #1e1e1e; */
+    
 
 }
 
+#brief-content p span{
+    font-size: 18px;
+    color: #02864b;
+    text-shadow: 0 0 0 #02864b;
+   
+}
 
 section#about >#random-facts{
     display: grid;
@@ -440,7 +451,7 @@ section#contact{
 
 
 .job{
-    color: #038349;
+    color: #02864b;
    
 }
 
@@ -449,11 +460,17 @@ section#contact{
 .social a{
     cursor: pointer;
     padding: 0px 20px;
+    display: inline-block;
 
 }
 
 
 i.fa{ 
+    font-size: 28px;
+    color: #02864b;
+}
+
+i.fa:hover{ 
     font-size: 28px;
     color: #00ff8c;
 }
@@ -470,6 +487,50 @@ i.fa{
 
 
 @media (max-width:684px){
+
+
+    nav {
+       white-space: nowrap;
+       overflow-x: scroll;
+       overflow-y: hidden;
+       min-height: 72px;
+       width:100%;
+       
+    }
+
+    nav #brand{
+        display: none;
+    }
+
+    #nav-links{
+        width: 100%;
+    }
+    
+    #nav-links ul{
+        margin-left: 40px;
+
+    }
+
+    #nav-links ul li {
+        display: inline-block;
+        font-size: 14px;
+    
+    }
+
+    #nav-links ul li a {
+        /* padding: 0px 15px; */
+        
+    
+    }
+
+    nav::-webkit-scrollbar{
+        display: none;
+    }
+
+    #nav-links ul li {
+     
+     }
+    
     .skills-row .bar{
         max-width: 100vw;
         height: 45px;
@@ -482,8 +543,34 @@ i.fa{
         background: #02864b;
         
     }
+
+    #brief-content {
+      
+        border-bottom: 2px ridge;
+        border-top:2px ridge;
+       
+     
+     }
+
+    #brief-content {
+        padding: 8px; 
+     
+     }
  
 
+}
+
+@media(max-width:340px){
+
+    nav #brand a{
+        font-size: 19px;
+        
+    }
+
+
+    #brief-content  {
+       display: none;
+    }
 }
 
 
