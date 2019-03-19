@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
-    font-family: 'Play', sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
 }
 
 html,
 body {
-    font-family: 'Play', sans-serif;
+    font-family: 'Raleway', sans-serif;
     min-width: 320px;
     color: green;
     background: white;
@@ -16,8 +16,9 @@ body {
 
 p{
     font-family: 'Marvel', sans-serif;
-    font-size: 18px;
-    color: #00ff8c;
+    font-size: 18px; 
+    font-weight: 300;
+   
 }
 
 img {
@@ -42,7 +43,8 @@ nav {
     justify-content: space-between;
     padding: 5px;
     width: 100%;
-    background: #038349;
+    background: #222222;
+    opacity: 0.95;
     z-index: 1;
 
 }
@@ -110,17 +112,18 @@ section{
 }
 
 #welcome-content h1{
+    font-family: "Marvel";
     font-size: 60px;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     text-shadow: 2px 2px 8px #111;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
 }
 
 #welcome-content h3{
     font-size: 28px;
-    font-weight: 100;
+    font-weight: 400;
     font-style: italic;
     font-family: 'Marvel', sans-serif;
     text-align: center;
@@ -149,10 +152,10 @@ section header{
 
 /* project sections */
 section#projects{
-    clip-path:polygon(0% 0%, 100% 0%, 100% 96%, 0% 100%);
     display: grid;
     grid-template-rows: repeat(auto-fit,(2,1fr));
     grid-row-gap: 15px;
+    clip-path:polygon(0 0%, 100% 0%, 100% 96%, 0% 100%);
 }
 
 section#projects .row{
@@ -176,14 +179,14 @@ section .row .card > .overlay{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg,rgba(60, 64, 143, 0.5),rgba(91,97,207,0.95)) ;
+    background: linear-gradient(135deg,rgba(60, 64, 143, 0.5),rgba(91,97,207,0.5)) ;
     visibility: hidden;
     display: flex;
     flex-direction:column;
     align-items: center;
     padding: 5px;
     justify-content: center; 
-    color: #eee;
+    color: #00ff8c;
 
 }
 
@@ -203,8 +206,8 @@ section .row .card span{
     right: 0;
     width: 100%;
     text-align: center;
-    background: #1e1e1e;
-    opacity: .7;
+    background: linear-gradient(135deg, rgb(74, 13, 143), rgb(250, 42, 143));
+    /* opacity: .7; */
     height: 25px;
     color: #00ff8c;
     
@@ -296,11 +299,15 @@ section#about{
 
 
 section#about > #brief{
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,auto));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
-    grid-column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+#brief h4{
+   text-align: center;
 }
 
 
@@ -308,6 +315,7 @@ section#about > #brief{
     border-radius: 50%;
     max-width: 200px;
     max-height: 200px;
+    box-shadow:0px 10px 20px rgba(255,255,255,0.1),0 6px 6px rgba(255, 255, 255, 0.2);
 
 }
 
