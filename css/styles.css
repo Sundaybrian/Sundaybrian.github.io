@@ -212,7 +212,12 @@ section {
 section header {
     justify-self: center;
     margin: 10px 0px 10px 0px;
+  
+}
+
+section header h2{
     color: #557c3e;
+    color: #951c49;
 }
 
 /****************** project sections************************ */
@@ -390,9 +395,10 @@ section#about>#brief {
     margin-bottom: 10px;
 }
 
-section#about header h4 {
+section#about header {
     text-align: center;
-    text-shadow: 0 1px 5px 3px #02864b;
+    color: #02864b;
+    
 }
 
 section#about #brief h3 span {
@@ -429,7 +435,7 @@ section#about #brief h3 span {
 #brief-content p span {
     font-size: 18px;
     color: #02864b;
-    text-shadow: 0 0 0 #02864b;
+    text-shadow: 0 0 0 #00ff8c;
 
 }
 
@@ -439,8 +445,9 @@ section#about>#random-facts {
     grid-gap: 10px;
 }
 
-#random-facts h3 {
+#random-facts h4 {
     /* text-align: center; */
+    color: #951c49;
 }
 
 #random-facts .likes-slide {
@@ -502,12 +509,15 @@ section#contact {
 
 i.fa {
     font-size: 28px;
-    color: #02864b;
+    color: #951c49;
+    transform: scale(0.9);
+    transition: 0.3s;
 }
 
 i.fa:hover {
     font-size: 28px;
     color: #00ff8c;
+    transform: scale(1.2);
 }
 
 /* media queries */
