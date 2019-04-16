@@ -46,8 +46,9 @@ nav {
     flex-wrap: wrap;
     padding: 5px;
     width: 100%;
-    background: #1e1e1e;
+    background: #111;
     z-index: 1;
+    opacity: .9;
 
 }
 
@@ -57,13 +58,26 @@ nav #brand {
 
 nav #brand a {
     text-decoration: none;
-    color: #951c49;
     font-size: 24px;
     font-weight: 600;
+    transform: scale(0.9);
+    transition: 0.3s;
 
 }
 
-#nav-links {
+nav #brand a span#sunday{
+ 
+    color: #fff;
+
+}
+
+nav #brand a span#priest{
+ 
+    color: #951c49;
+
+}
+
+nav #nav-links {
     width: 60%;
 }
 
@@ -71,7 +85,6 @@ nav #brand a {
     /* background: #038349; */
     display: flex;
     justify-content: space-evenly;
-
 
 }
 
@@ -89,26 +102,34 @@ nav #brand a {
     padding: 0px 20px;
     text-transform: capitalize;
     border-left: solid #951c49;
+    transform: scale(0.9);
+    transition: 0.3s;
 
 }
 
 nav:hover {
-    border-bottom: 1px solid #00ff8c;
+    /* border-bottom: 1px solid #fff; */
 
 }
 
-/* nav:hover #brand a{
-    color: #02864b;
-    font-weight:400;
-} */
-
 nav:hover #nav-links ul li a:hover {
-    border-bottom: solid #f5f5f5;
-    text-transform: uppercase;
-    border-left: 0;
-    /* color:#951c49 ; */
+   
+    transform: scale(1);
     color: #00ff8c;
 
+}
+
+nav:hover #nav-links ul li a:hover  {
+    border-left: solid #fff;
+
+}
+
+nav:hover #brand a span#sunday   {
+    color:#951c49 ;
+}
+
+nav:hover #brand a span#priest {
+    color:  #fff;
 }
 
 .white {
@@ -457,6 +478,18 @@ section#contact {
 
 }
 
+.job:hover{
+    color:#951c49;
+}
+
+.job a{
+    text-decoration: #02864b;
+    color: #951c49;
+}
+
+.job:hover a{
+    color: #02864b;
+}
 
 
 .social a {
