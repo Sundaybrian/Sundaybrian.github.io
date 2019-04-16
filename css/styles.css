@@ -285,8 +285,9 @@ section .row .project-tile span {
 
     /* background: linear-gradient(135deg, rgb(74, 13, 143), rgb(250, 42, 143)); */
     background: #111;
+    padding: 4px;
     opacity: .95;
-    height: 25px;
+    height: 28px;
     color: #00ff8c;
     text-transform: capitalize;
 
