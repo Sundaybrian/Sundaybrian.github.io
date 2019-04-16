@@ -65,14 +65,14 @@ nav #brand a {
 
 }
 
-nav #brand a span#sunday{
- 
+nav #brand a span#sunday {
+
     color: #fff;
 
 }
 
-nav #brand a span#priest{
- 
+nav #brand a span#priest {
+
     color: #951c49;
 
 }
@@ -113,23 +113,23 @@ nav:hover {
 }
 
 nav:hover #nav-links ul li a:hover {
-   
+
     transform: scale(1);
     color: #00ff8c;
 
 }
 
-nav:hover #nav-links ul li a:hover  {
+nav:hover #nav-links ul li a:hover {
     border-left: solid #fff;
 
 }
 
-nav:hover #brand a span#sunday   {
-    color:#951c49 ;
+nav:hover #brand a span#sunday {
+    color: #951c49;
 }
 
 nav:hover #brand a span#priest {
-    color:  #fff;
+    color: #fff;
 }
 
 .white {
@@ -212,10 +212,10 @@ section {
 section header {
     justify-self: center;
     margin: 10px 0px 10px 0px;
-  
+
 }
 
-section header h2{
+section header h2 {
     color: #557c3e;
     color: #951c49;
 }
@@ -398,7 +398,7 @@ section#about>#brief {
 section#about header {
     text-align: center;
     color: #02864b;
-    
+
 }
 
 section#about #brief h3 span {
@@ -485,16 +485,16 @@ section#contact {
 
 }
 
-.job:hover{
-    color:#951c49;
+.job:hover {
+    color: #951c49;
 }
 
-.job a{
+.job a {
     text-decoration: #02864b;
     color: #951c49;
 }
 
-.job:hover a{
+.job:hover a {
     color: #02864b;
 }
 
