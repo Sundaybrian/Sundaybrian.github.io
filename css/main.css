@@ -196,7 +196,21 @@ ol li {
     outline: 0;
 }
 
-/*=============================================NAVIGATION====================================================== */
+/* ==================== SECTION HOME===================================================================== */
+
+.cover-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-bg.jpg)right bottom no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+
+/*******************==============NAVIGATION=======******************* */
+
+header {
+    background: transparent;
+    width: 100%;
+    position: relative;
+}
 
 /* sticky header */
 header.sticky {
@@ -215,7 +229,6 @@ body.scroll header.sticky {
 
 .nav-wrapper {
     max-width: 1200px;
-    background: black;
     margin: 0 auto;
     position: relative;
     padding: 7px 0;
@@ -231,6 +244,7 @@ nav.nav-wrapper ul li {
 }
 
 nav.nav-wrapper ul li a {
+    /* letter-spacing: .1rem; */
     font-size: 17px;
     line-height: 22px;
     text-transform: capitalize;
@@ -281,20 +295,66 @@ nav.nav-wrapper ul li a:hover::after {
     margin: 0 auto;
 }
 
+ul#scene {
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
 ul#scene li.name {
     text-align: center;
     font-size: 40px;
-    color: green;
+    line-height: 45px;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .8rem black;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
 
 }
 
 ul#scene li.title {
     text-align: center;
-    font-size: 40px;
-    color: green;
+    font-size: 30px;
+    line-height: 35px;
+    text-shadow: .1rem .1rem .5rem black;
+    color: #fff;
+    width: 100%;
+    margin-top: 60px;
 
 }
 
 .btn {
+    width: 100%;
+    text-align: center;
     margin-top: 150px;
+}
+
+.portfolio-btn,
+.contact-btn {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 0;
+    border-width: medium;
+
+}
+
+.portfolio-btn {
+    margin-right: 30px;
+
+}
+
+.contact-btn {
+    margin-left: 30px;
+}
+
+.portfolio-btn:hover,
+.contact-btn:hover {
+    background: #fff;
+    color: black;
 }
