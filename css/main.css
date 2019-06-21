@@ -188,6 +188,10 @@ ol li {
     margin-bottom: 10px;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /*HELPER CLASS END*/
 
@@ -218,9 +222,10 @@ header.sticky {
     top: 0;
     right: 0;
     left: 0;
-    background: green;
+    background: rgba(0, 0, 0, 0.85);
     transform: translateY(-200%);
     transition: 0.2s;
+    z-index: 5;
 }
 
 body.scroll header.sticky {
@@ -358,3 +363,100 @@ ul#scene li.title {
     background: #fff;
     color: black;
 }
+
+/* =================PARALLAX END===================================== */
+
+
+/* =================SECTION PROJECTS===================================== */
+section.masonry-grid {
+    position: relative;
+}
+
+h2.subtitle {
+    position: relative;
+    margin: 70px auto;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px;
+    display: block;
+    text-transform: capitalize;
+
+}
+
+h2.subtitle::after {
+    content: '';
+    display: block;
+    background: black;
+    width: 100px;
+    height: 2px;
+    margin: 30px auto 0 auto;
+}
+
+.grid {
+    margin: 0 auto;
+
+}
+
+.grid-item {
+    width: 450px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.grid-item .content-slide-up {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    bottom: -100px;
+    /* left: 50%; */
+    /* transform: translate(-50%, 0); */
+    transition: 0.6s;
+    /* opacity: 0; */
+    z-index: 1;
+}
+
+.grid-item .content-slide-up>p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px auto 0 auto;
+    font-size: .9rem;
+    text-shadow: .1rem .1rem .5rem #fff;
+    font-weight: 400;
+
+}
+
+
+.grid-item:hover .content-slide-up {
+    /* transform: translate(0%, 0%); */
+    bottom: 25%;
+    opacity: 1;
+
+}
+
+.content-slide-up>hr.underline {
+    border: 1px solid cyan;
+    width: 200px;
+    height: 2px;
+    margin: 15px auto 0 auto;
+}
+
+.grid-item .overlay-slide-down {
+    height: 0%;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.grid-item:hover .overlay-slide-down {
+    opacity: .85;
+    height: 100%;
+}
+
+
+/* =================SECTION PROJECTS===================================== */
