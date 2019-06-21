@@ -35,11 +35,33 @@
                 </ul>
             </nav>
         </header>
+
+        <!--============================== paralax scene=================================== -->
+        <div class="wrapper">
+            <ul id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="0" data-scalar-y="0"
+                data-friction-x="0" data-friction-y="0" data-origin-x="0" data-origin-y="0">
+                <li class="layer name" data-depth="0">Sunday Brian</li>
+                <li class="layer title" data-depth="0">Web Designer</li>
+                <li class="layer btn btn-main">
+                    <a href="" class="portfolio-btn">Portfolio</a>
+                    <a href="" class="contact-btn">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+
     </section>
 
-    <script src="js/html5shiv.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
     <script src="js/main.js"></script>
+
+
+    <!-- start parallax lib -->
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
 </body>
 
 </html>

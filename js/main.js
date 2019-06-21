@@ -16,4 +16,6 @@ $(document).ready(function () {
         var scrollFromTop = $(window).scrollTop();
         $('body').toggleClass('scroll', (scrollFromTop > 350));
     });
+
+
 });

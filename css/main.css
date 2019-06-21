@@ -272,3 +272,9 @@ nav.nav-wrapper ul li a:hover::after {
     -webkit-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
