@@ -195,6 +195,14 @@ img {
   outline: 0;
 }
 
+.gray {
+  background: lightgray;
+}
+
+.white {
+  background: #fff;
+}
+
 /* ==================== SECTION HOME===================================================================== */
 
 .cover-main {
@@ -484,7 +492,8 @@ section#skills .narrow {
   margin: 0 0 10px;
   padding: 0;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 1.4px;
+  font-size: 14px;
 
 }
 
@@ -544,7 +553,6 @@ section .about-content {
   max-width: 600px;
   background: rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
-  text-align: left;
 }
 
 .about-self>h4 {
@@ -554,11 +562,34 @@ section .about-content {
 }
 
 .about-self>p {
+  text-align: left;
   margin-top: 10px;
-  font-size: 1.2rem;
-  line-height: 1.9;
-  padding: 5px;
+  line-height: 21px;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  transition: .6s;
 }
+
+.about-self p span {
+  /* color: #02864b; */
+  color: #00ff8c;
+  text-shadow: 0 0 1px #02864b;
+  transition: .4s;
+}
+
+
+.about-self p:hover {
+  color: #02864b;
+
+}
+
+.about-self p:hover span {
+  color: cyan;
+  text-shadow: 0 0 1px turquoise;
+}
+
+
 
 /* ==================== END SECTION ABOUT======================================================= */
 
