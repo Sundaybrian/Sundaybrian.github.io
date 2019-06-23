@@ -603,7 +603,19 @@ footer h1 {
     bottom: 0;
     background: rgba(0, 0, 0, 0.72);
     z-index: 5;
-    display: none;
+    /* display: none; */
+  }
+
+  .main-overlay::after {
+    content: '';
+    background: url('../img/close-icon.svg') no-repeat center/cover;
+    /* display: block; */
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    z-index: 20;
   }
 
 
