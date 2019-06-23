@@ -618,6 +618,39 @@ footer h1 {
     z-index: 20;
   }
 
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #131313;
+    width: 100%;
+    max-width: 300px;
+    z-index: 30;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  nav.nav-wrapper ul li {
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  nav.nav-wrapper ul li a {
+    transition: .6s;
+    transform: scale(0.9);
+
+  }
+
+  nav.nav-wrapper ul li a:hover {
+
+    transform: scale(1.1);
+    color: cyan
+  }
+
+
+
 
 
 
