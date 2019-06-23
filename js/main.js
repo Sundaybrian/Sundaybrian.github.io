@@ -17,6 +17,21 @@ $(document).ready(function () {
         $('body').toggleClass('scroll', (scrollFromTop > 350));
     });
 
+    // smooth scrolling
+    $('.menu li a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = $(this.hash);
+        console.log(target);
+
+        if (target.length) {
+            $('html,body').stop().animate({
+                scrollTop: target.offset().top - 62
+            }, 1000);
+        }
+
+    });
+
     // masonry
 
     $('.grid').masonry({
