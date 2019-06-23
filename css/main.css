@@ -584,6 +584,7 @@ footer h1 {
 
 /* RESPONSIVE MENU */
 @media(max-width:768px) {
+
   .menu-trigger {
     position: absolute;
     width: 35px;
@@ -591,7 +592,23 @@ footer h1 {
     top: 15px;
     right: 10px;
     background: url('../img/hamburger-icon.svg') no-repeat center/cover;
+    z-index: 10;
   }
+
+  .main-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.72);
+    z-index: 5;
+    display: none;
+  }
+
+
+
+
 }
 
 /* ========================================================================== */
