@@ -28,6 +28,10 @@ $(document).ready(function () {
 
     // slick slider
     $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 1500,
+        centerMode: true,
+        slidesToShow: 3,
         arrow: true,
         prevArrow: '<button type="button" class="slick-prev">Previous</button>',
         nextArrow: '<button type="button" class="slick-next">Next</button>'

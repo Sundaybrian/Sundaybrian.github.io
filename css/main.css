@@ -532,6 +532,7 @@ section .about-content {
   background: black;
   height: 40px;
   width: 40px;
+  z-index: 1;
 }
 
 .slick-prev {
