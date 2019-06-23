@@ -54,5 +54,29 @@ $(document).ready(function () {
     });
 
 
+    // responsive menu
+
+    var body = $('body');
+    var menuTrigger = $('.js-menu-trigger');
+    var mainOverlay = $('.js-main-overlay');
+
+    menuTrigger.on('click', function () {
+        body.addClass('menu-is-active');
+    });
+
+
+    $('.menu li a').on('click', function () {
+        body.removeClass('menu-is-active');
+    });
+
+    mainOverlay.on('click', function () {
+        body.removeClass('menu-is-active')
+    })
+
+
+
+
+
+
 
 });

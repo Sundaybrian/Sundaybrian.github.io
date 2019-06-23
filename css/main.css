@@ -603,18 +603,18 @@ footer h1 {
     bottom: 0;
     background: rgba(0, 0, 0, 0.72);
     z-index: 5;
-    /* display: none; */
+    display: none;
   }
 
   .main-overlay::after {
     content: '';
     background: url('../img/close-icon.svg') no-repeat center/cover;
-    /* display: block; */
+    display: block;
     width: 35px;
     height: 35px;
     position: fixed;
     right: 10px;
-    top: 15px;
+    top: 10px;
     z-index: 20;
   }
 
@@ -628,6 +628,7 @@ footer h1 {
     max-width: 300px;
     z-index: 30;
     transform: translate3d(-100%, 0, 0);
+    transition: .4s;
   }
 
   nav.nav-wrapper ul li {
@@ -644,16 +645,24 @@ footer h1 {
   }
 
   nav.nav-wrapper ul li a:hover {
-
     transform: scale(1.1);
     color: cyan
   }
 
+  body.menu-is-active .menu {
+    transform: translate3d(0, 0, 0);
+    display: block;
+    padding: 0 15px;
+  }
 
+  body.menu-is-active .main-overlay {
+    display: block;
+  }
 
+  body.menu-is-active .menu-trigger {
+    display: none;
 
-
-
+  }
 }
 
 /* ========================================================================== */
