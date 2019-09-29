@@ -320,7 +320,7 @@ section#about #brief h3 span {
 
 #brief-content {
     padding: 0 35px 0 35px;
-    border-bottom: 2px ridge;
+    /* border-bottom: 2px ridge; */
 
 }
 
