@@ -1,324 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link href="https://fonts.googleapis.com/css?family=Marvel:400,700|Raleway:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Marvel:400,700|Raleway:400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
 
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbarSupportedContent" >
-<nav class="navbar cf navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#page-top">Sunday Brian</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
-        
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <body id="page-top" data-spy="scroll" data-target="#navbarSupportedContent">
+    <nav class="navbar cf navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#page-top">Sunday Brian</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto cf">
-            <li class="nav-item active">
-                <a class="nav-link" href="#page-top">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-            </li>
-        
-            <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+          <li class="nav-item active">
+            <a class="nav-link" href="#page-top"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- ===============================hero================================================ -->
-    
-    <section id="welcome-section">
-        <div id="welcome-content">
-            <h1><br><span>Brian Sunday</span></h1>
-            <h3>Fullstack Web Developer based in Nairobi,Kenya</h3>
+
+    <div class="container-fluid">
+
+      <div class="text-center mt-2">
+        <img src="img/sunday.jpg" alt="profile-pic" width=200>
+        <h1>Sunday Brian</h1>
+        <h3>Generalist</h3>
+        <h5>Web Developer</h5>
+
+        <div class="text-center" style="margin:20px">
+          <a href="https://github.com/Sundaybrian" target="_blank">
+            Github Profile
+          </a>
         </div>
-    </section>
+      </div>
 
-    <!-- ===============================end hero================================================ -->
-
-
-    <!-- ===============================projects================================================ -->
+       <!-- ===============================projects================================================ -->
 
     <section id="projects" class="grey">
-        <header>
-            <h2>Projects</h2>
-        </header>
+      <header>
+        <h2>Projects</h2>
+      </header>
 
-        <div class="row-projects">
-                <a href="https://instant-pixels.herokuapp.com/" target="_blank">
-                    <div class="project-tile">
-                        <img src="img/pixels.png"
-                            alt="pixels picture">
-                        <div class="overlay">
-                            <p>Pixels</p>
-                            <hr class="line">
-                        </div>
-                        <span class="project-name">Pixels</span>
-                    </div>
-                </a>
-
-                <a href="https://watchdogs-news-app.herokuapp.com/" target="_blank">
-                    <div class="project-tile">
-                        <img src="img/watchdogs.png"
-                            alt="watchdogs newsite picture">
-                        <div class="overlay">
-                            <p>News Website</p>
-                            <hr class="line">
-                        </div>
-                        <span class="project-name">Watch Dogs News App</span>
-                    </div>
-                </a>
-    
-                <a href="https://sundaybrian.github.io/angular-gitHubSearch/landing" target="_blank">
-                    <div class="project-tile">
-                        <img src="img/gitsearch.png"
-                            alt="gitsearch picture">
-                        <div class="overlay">
-                            <p>Github Search</p>
-                            <hr class="line">
-                        </div>
-                        <span class="project-name">Git Search</span>
-                    </div>
-                </a>
-    
-                <a href="https://sundaybrian.github.io/angular-meal-tracker/" target="_blank">
-                    <div class="project-tile">
-                        <img src="img/mealtracker.png"
-                            alt="mealtracker picture">
-                        <div class="overlay">
-                            <p>Meal Tracker</p>
-                            <hr class="line">
-                        </div>
-                        <span class="project-name">Meal Tracker</span>
-                    </div>
-                </a>
-
-    
-                <a href="https://nyumbakumiwatch.herokuapp.com/" target="_blank">
-                    <div class="project-tile">
-                        <img src="img/nyumbakumi.png"
-                            alt="hoodwatch picture">
-                        <div class="overlay">
-                            <p>HoodWatch</p>
-                            <hr class="line">
-                        </div>
-                        <span class="project-name">HoodWatch</span>
-                    </div>
-                </a>
-    
-
-                <a href="https://hbd-vincencia.firebaseapp.com/" target="_blank">
-                    <div class="project-tile">
-                        <img src="img/versionlady.png"
-                            alt="laveen birthday">
-                        <div class="overlay">
-                            <p>Tribute to the lady of the home</p>
-                            <hr class="line">
-                        </div>
-                        <span class="project-name">birthday tribute version lady</span>
-                    </div>
-                </a>
-
-            <a href="https://sundaybrian.github.io/anitas-kitchen-v2/" target="_blank">
-                <div class="project-tile">
-                    <img src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/anitas.JPG?raw=true"
-                        alt="anitas kitchen screenshot">
-                    <div class="overlay">
-                        <p>Anitas Kitchen is a static restaurant</p>
-                        <hr class="line">
-                    </div>
-                    <span class="project-name">Anitas Kitchen</span>
-                </div>
-            </a>
-
-
-            <a href="https://ferouze-birthday.firebaseapp.com/" target="_blank">
-                <div class="project-tile">
-                    <img src="img/version gents.png"
-                        alt="waangari screenshot">
-                    <div class="overlay">
-                        <p>Tribute to the man of the house</p>
-                        <hr class="line">
-                    </div>
-                    <span class="project-name">Birthday Tribute version gents</span>
-                </div>
-            </a>
-
-            <a href="https://play.google.com/store/apps/details?id=com.bets.spack" target="_blank">
-                <div class="project-tile">
-                    <img src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/betspark.JPG?raw=true"
-                        alt="betspark screenshot">
-                    <div class="overlay">
-                        <p>Betspark is a betting tips app made with the use of Apache cordova</p>
-                        <hr class="line">
-                    </div>
-                    <span class="project-name">betspark</span>
-                </div>
-            </a>
-
-            <a href="https://codepen.io/sundaybrian/pen/QodEPV" target="_blank">
-                <div class="project-tile">
-                    <img src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/form.JPG?raw=true"
-                        alt="Marvel survey screenshot">
-                    <div class="overlay">
-                        <p>Marvel Form is basically a survey form</p>
-                        <hr class="line">
-                    </div>
-                    <span class="project-name">Marvel Form</span>
-                </div>
-            </a>
-
-            <a href="https://sundaybrian.github.io/anthem_landing/" target="_blank">
-                <div class="project-tile">
-                    <img src="https://github.com/Sundaybrian/anthem_landing/blob/master/img/anthem1.JPG?raw=true"
-                        alt="anthem screenshot">
-                    <div class="overlay">
-                        <p>This is a showcase of the Anthem video game made by bioware and EA</p>
-                        <hr class="line">
-                    </div>
-                    <span class="project-name">Anthem</span>
-                </div>
-
-            </a>
-           
-            <a href="https://codepen.io/sundaybrian/pen/VRmYwM" target="_blank">
-                <div class="project-tile">
-                    <img src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/waangari.JPG?raw=true"
-                        alt="waangari screenshot">
-                    <div class="overlay">
-                        <p>This is a tribute to the wonderful lady of valour Waangari Maathai </p>
-                        <hr class="line">
-                    </div>
-                    <span class="project-name">waangari maathai tribute</span>
-                </div>
-            </a>
-
-         
-
+      <div class="row-projects">
+        <!-- testing one  -->
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="row work-item-row">
+            <div class="col-lg-8">
+              <img src="img/watchdogs.png" alt="watchdogs newsite picture" />
+            </div>
+            <div class="col-lg-4">
+              <h2>
+                <a
+                  href="https://watchdogs-news-app.herokuapp.com/"
+                  target="blank"
+                  >WatchDogs</a
+                >
+              </h2>
+              <p>A web application that mimics a news webiste</p>
+              <h4>Technology</h4>
+              <p>
+                Watchdogs is built using the flask web framework,boot the css
+                framework, database using postgres, the news api provides real
+                world articles and runs on Heroku.</p>
+              </p>
+            </div>
+          </div>
         </div>
+        <!-- testing -->
+
+        <a href="https://instant-pixels.herokuapp.com/" target="_blank">
+          <div class="project-tile">
+            <img src="img/pixels.png" alt="pixels picture" />
+            <div class="overlay">
+              <p>Pixels</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Pixels</span>
+          </div>
+        </a>
+
+        <a href="https://watchdogs-news-app.herokuapp.com/" target="_blank">
+          <div class="project-tile">
+            <img src="img/watchdogs.png" alt="watchdogs newsite picture" />
+            <div class="overlay">
+              <p>News Website</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Watch Dogs News App</span>
+          </div>
+        </a>
+
+        <a
+          href="https://sundaybrian.github.io/angular-gitHubSearch/landing"
+          target="_blank"
+        >
+          <div class="project-tile">
+            <img src="img/gitsearch.png" alt="gitsearch picture" />
+            <div class="overlay">
+              <p>Github Search</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Git Search</span>
+          </div>
+        </a>
+
+        <a
+          href="https://sundaybrian.github.io/angular-meal-tracker/"
+          target="_blank"
+        >
+          <div class="project-tile">
+            <img src="img/mealtracker.png" alt="mealtracker picture" />
+            <div class="overlay">
+              <p>Meal Tracker</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Meal Tracker</span>
+          </div>
+        </a>
+
+        <a href="https://nyumbakumiwatch.herokuapp.com/" target="_blank">
+          <div class="project-tile">
+            <img src="img/nyumbakumi.png" alt="hoodwatch picture" />
+            <div class="overlay">
+              <p>HoodWatch</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">HoodWatch</span>
+          </div>
+        </a>
+
+        <a href="https://hbd-vincencia.firebaseapp.com/" target="_blank">
+          <div class="project-tile">
+            <img src="img/versionlady.png" alt="laveen birthday" />
+            <div class="overlay">
+              <p>Tribute to the lady of the home</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">birthday tribute version lady</span>
+          </div>
+        </a>
+
+        <a
+          href="https://sundaybrian.github.io/anitas-kitchen-v2/"
+          target="_blank"
+        >
+          <div class="project-tile">
+            <img
+              src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/anitas.JPG?raw=true"
+              alt="anitas kitchen screenshot"
+            />
+            <div class="overlay">
+              <p>Anitas Kitchen is a static restaurant</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Anitas Kitchen</span>
+          </div>
+        </a>
+
+        <a href="https://ferouze-birthday.firebaseapp.com/" target="_blank">
+          <div class="project-tile">
+            <img src="img/version gents.png" alt="waangari screenshot" />
+            <div class="overlay">
+              <p>Tribute to the man of the house</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Birthday Tribute version gents</span>
+          </div>
+        </a>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=com.bets.spack"
+          target="_blank"
+        >
+          <div class="project-tile">
+            <img
+              src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/betspark.JPG?raw=true"
+              alt="betspark screenshot"
+            />
+            <div class="overlay">
+              <p>
+                Betspark is a betting tips app made with the use of Apache
+                cordova
+              </p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">betspark</span>
+          </div>
+        </a>
+
+        <a href="https://codepen.io/sundaybrian/pen/QodEPV" target="_blank">
+          <div class="project-tile">
+            <img
+              src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/form.JPG?raw=true"
+              alt="Marvel survey screenshot"
+            />
+            <div class="overlay">
+              <p>Marvel Form is basically a survey form</p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Marvel Form</span>
+          </div>
+        </a>
+
+        <a href="https://sundaybrian.github.io/anthem_landing/" target="_blank">
+          <div class="project-tile">
+            <img
+              src="https://github.com/Sundaybrian/anthem_landing/blob/master/img/anthem1.JPG?raw=true"
+              alt="anthem screenshot"
+            />
+            <div class="overlay">
+              <p>
+                This is a showcase of the Anthem video game made by bioware and
+                EA
+              </p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">Anthem</span>
+          </div>
+        </a>
+
+        <a href="https://codepen.io/sundaybrian/pen/VRmYwM" target="_blank">
+          <div class="project-tile">
+            <img
+              src="https://github.com/Sundaybrian/sundaybrian.github.io/blob/master/img/waangari.JPG?raw=true"
+              alt="waangari screenshot"
+            />
+            <div class="overlay">
+              <p>
+                This is a tribute to the wonderful lady of valour Waangari
+                Maathai
+              </p>
+              <hr class="line" />
+            </div>
+            <span class="project-name">waangari maathai tribute</span>
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- ===============================end projects================================================ -->
 
-
     <!-- ===============================skills================================================ -->
 
     <section id="skills" class="white">
-        <header>
-            <h2>Skills</h2>
-        </header>
-        <div class="skills-row">
-            <img src="img/python.png.jpeg" alt="">
-            <img src="img/flask.png" alt="">
-            <img src="img/django-icon-0.jpg" alt="">
-            <img src="img/angular.svg" alt="">
-            <img src="img/html5.png" alt="">
-            <img src="img/css3.png.jpeg" alt="">
-            <img src="img/javascript.png" alt="">
-            <img src="img/bootstrap.png" alt="">
-            <img src="img/firebase.png" alt="">
-            <img src="img/postgresql.png" alt="">
-
-        </div>
-
-      
-
-    </section> 
+      <header>
+        <h2>Skills</h2>
+      </header>
+      <div class="skills-row">
+        <img src="img/python.png.jpeg" alt="" />
+        <img src="img/flask.png" alt="" />
+        <img src="img/django-icon-0.jpg" alt="" />
+        <img src="img/angular.svg" alt="" />
+        <img src="img/html5.png" alt="" />
+        <img src="img/css3.png.jpeg" alt="" />
+        <img src="img/javascript.png" alt="" />
+        <img src="img/bootstrap.png" alt="" />
+        <img src="img/firebase.png" alt="" />
+        <img src="img/postgresql.png" alt="" />
+      </div>
+    </section>
 
     <!-- ===============================end skills================================================ -->
 
     <!-- ===============================about================================================ -->
 
-
     <section id="about" class="grey">
-        <header>
-            <h2>About</h2>
-        </header>
+      <header>
+        <h2>About</h2>
+      </header>
 
-        <div id="brief">
+      <div id="brief">
+        <div id="brief-img">
+          <img src="img/sunday.jpg" alt="picture of sundaybrian" />
+        </div>
 
-            <div id="brief-img">
-                <img src="img/sunday.jpg"
-                    alt="picture of sundaybrian">
-
-            </div>
-
-            <div id="brief-content">
-                <!-- <header>
+        <div id="brief-content">
+          <!-- <header>
                     <h3>I'm a front-end developer </h3>
                     <h4>Based in Nairobi Kenya </h4>
                 </header> -->
 
-                <p>I enjoy creating beautiful <span>layouts</span>,playing around with
-                    <span>Javascript</span>,experimenting with <span>Apache Cordova</span>,following on <span>Political
-                        Debates</span>
-                    and watching <span>Arsenal Play</span>.When i'm not <span>coding</span>,complaining about
-                    Arsenal,playing
-                    <span>football manager</span>,adding to my skills toolbelt-like batman,or watching
-                    <span>blender
-                        videos</span>;you'll find me doing all of the above and eating<span> githeri
-                    </span>hehe...and shouting at my laptop.</p>
+          <p>
+            I enjoy creating beautiful <span>layouts</span>,playing around with
+            <span>Javascript</span>,experimenting with
+            <span>Apache Cordova</span>,following on
+            <span>Political Debates</span> and watching
+            <span>Arsenal Play</span>.When i'm not
+            <span>coding</span>,complaining about Arsenal,playing
+            <span>football manager</span>,adding to my skills toolbelt-like
+            batman,or watching <span>blender videos</span>;you'll find me doing
+            all of the above and eating<span> githeri </span>hehe...and shouting
+            at my laptop.
+          </p>
+        </div>
+      </div>
 
-            </div>
+      <div id="random-facts">
+        <header>
+          <h3>Random Facts</h3>
+          <h4>Likes</h4>
+        </header>
 
+        <div class="likes-slide">
+          <img src="https://i.imgur.com/ZQzeViF.jpg" alt="" />
 
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Blender_3D_Cycles_tutorial_-_Juice_bottle_packshot_-_Fran%C3%A7ais_-_by_KOPILOT.webm/1920px--Blender_3D_Cycles_tutorial_-_Juice_bottle_packshot_-_Fran%C3%A7ais_-_by_KOPILOT.webm.jpg"
+            alt="picture of blender3d"
+          />
+
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="martin luther jr"
+          />
+
+          <img
+            src="http://www.hdnicewallpapers.com/Walls/Big/Brands%20and%20Logo/Arsenal_FC_Logo_Wallpapers.jpg"
+            alt="picture of arsenalfc"
+          />
+
+          <img
+            src="http://sfwallpaper.com/images/comic-wallpaper-8.jpg"
+            alt=""
+          />
+
+          <img
+            src="https://www.kenyanstyle.com/wp-content/uploads/2016/08/DSC_1819.jpg"
+            alt="rice and beans"
+          />
+
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/001/567/512/large/cadaver-frio-kylo-ren.jpg?1448699836"
+            alt=""
+          />
+
+          <!-- <img src="http://wallpapershdnow.com/images/games/action/call-of-duty-black-ops-3/call-of-duty-black-ops-3-wallpaper-20.jpg"
+                    alt="call of duty"> -->
         </div>
 
-        <div id="random-facts">
-
-            <header>
-                <h3>Random Facts</h3>
-                <h4>Likes</h4>
-            </header>
-
-            <div class="likes-slide">
-                <img src="https://i.imgur.com/ZQzeViF.jpg" alt="">
-
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Blender_3D_Cycles_tutorial_-_Juice_bottle_packshot_-_Fran%C3%A7ais_-_by_KOPILOT.webm/1920px--Blender_3D_Cycles_tutorial_-_Juice_bottle_packshot_-_Fran%C3%A7ais_-_by_KOPILOT.webm.jpg"
-                    alt="picture of blender3d">
-
-                <img src="data:image/jpeg;base64,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"
-                    alt="martin luther jr">
-
-                <img src="http://www.hdnicewallpapers.com/Walls/Big/Brands%20and%20Logo/Arsenal_FC_Logo_Wallpapers.jpg"
-                    alt="picture of arsenalfc">
-
-
-                <img src="http://sfwallpaper.com/images/comic-wallpaper-8.jpg" alt="">
-
-                <img src="https://www.kenyanstyle.com/wp-content/uploads/2016/08/DSC_1819.jpg" alt="rice and beans">
-
-                <img src="https://cdna.artstation.com/p/assets/images/images/001/567/512/large/cadaver-frio-kylo-ren.jpg?1448699836"
-                    alt="">
-
-                <!-- <img src="http://wallpapershdnow.com/images/games/action/call-of-duty-black-ops-3/call-of-duty-black-ops-3-wallpaper-20.jpg"
-                    alt="call of duty"> -->
-
-
-
-            </div>
-
-            <!-- <div class="likes-list">
+        <!-- <div class="likes-list">
                 <ul>
                     <li>I love Thee Arsenal</li>
                     <li>Yees to 3D modelling,and Art in general</li>
@@ -327,40 +389,51 @@
                     <li></li>
                 </ul>
             </div> -->
-        </div>
+      </div>
     </section>
 
     <!-- ===============================end about=============================================== -->
 
     <!-- ===============================contact================================================ -->
 
-
-
     <section id="contact" class="white">
-        <header>
-            <h2>Contact</h2>
-        </header>
+      <header>
+        <h2>Contact</h2>
+      </header>
 
-            <div class="job">
-            <h4>I'm available for work get in touch:<a
-               href="mailto:sundaypriest@outlook.com">sundaypriest@outlook.com</a>
-            </h4>
-        </div>
+      <div class="job">
+        <h4>
+          I'm available for work get in touch:<a
+            href="mailto:sundaypriest@outlook.com"
+            >sundaypriest@outlook.com</a
+          >
+        </h4>
+      </div>
 
-        <div class="social">
-            <a href="https://www.linkedin.com/in/sunday-brian-13b74773/" target="_blank"> <i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/Sundaybrian" target="_blank"> <i class="fa fa-github"></i></a>
-        </div>
-      
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/sunday-brian-13b74773/"
+          target="_blank"
+        >
+          <i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Sundaybrian" target="_blank">
+          <i class="fa fa-github"></i
+        ></a>
+      </div>
     </section>
 
     <!-- ===============================end contact================================================ -->
 
 
+    </div>
+  <!-- =============================== container================================================ -->
+
+
+   
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
