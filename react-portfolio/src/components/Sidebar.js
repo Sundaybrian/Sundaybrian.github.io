@@ -21,7 +21,7 @@ function Sidebar() {
       <TwitterIcon />
 
       {/* sidebar options */}
-      <SidebarOption text="Home" />
+      <SidebarOption active text="Home" />
       <SidebarOption text="Explore" />
       <SidebarOption text="Notifications" />
       <SidebarOption text="Messages" />
