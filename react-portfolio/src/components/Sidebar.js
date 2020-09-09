@@ -28,10 +28,11 @@ function Sidebar() {
       <SidebarOption text="Lists" />
       <SidebarOption text="profile" />
       <SidebarOption text="More" />
-      <SidebarOption />
-      {/* sidebar options */}
 
       {/* Tweet button */}
+      <Button variant="outlined" className="sidebarTweet" fullWidth>
+        Tweet
+      </Button>
     </div>
   );
 }
