@@ -10,20 +10,19 @@
   padding: 10px;
 }
 
-.post__body img {
+.post__body > img {
   border-radius: 20px;
-  width: 100%;
-}
-
-.post__headerDescription {
-  margin-bottom: 10px;
-  font-size: 15px;
-  word-wrap: break-word;
 }
 
 .post__headerText > h3 {
   font-size: 15px;
   margin-bottom: 5px;
+}
+
+.post__headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+  overflow-wrap: break-word;
 }
 
 .post__badge {
