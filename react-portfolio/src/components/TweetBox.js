@@ -10,7 +10,7 @@ function TweetBox() {
           <Avatar src="" />
           <input type="text" placeholder="Whats happening?" />
         </div>
-        <Button>Tweet</Button>
+        <Button className="tweetBox__tweetButton">Tweet</Button>
       </form>
     </div>
   );
