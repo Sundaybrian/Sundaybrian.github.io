@@ -1,10 +1,13 @@
 import React from "react";
+import "./Feed.css";
 
 function Feed() {
   return (
     <div className="feed">
-      <h2>Feed</h2>
       {/* header */}
+      <div className="feed__header">
+        <h2>header</h2>
+      </div>
 
       {/* tweet box */}
 
