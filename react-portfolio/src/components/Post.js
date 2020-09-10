@@ -3,7 +3,7 @@ import { Avatar } from "@material-ui/core";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
-import FavouriteBorderIcon from "@material-ui/icons/Favorite";
+import FavoriteBorderIcon from "@material-ui/icons/Favorite";
 import PublishIcon from "@material-ui/icons/Publish";
 import "./Post.css";
 
@@ -17,33 +17,32 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Post 1
-              <span>
-                <VerifiedUserIcon className="post__badge" /> @omawami rules
+              Sunday One{" "}
+              <span className="post__headerSpecial">
+                <VerifiedUserIcon className="post__badge" />@ Omwami rule
               </span>
             </h3>
           </div>
-          <div className="post__headerDesc">
+          <div className="post__headerDescription">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              necessitatibus sed obcaecati accusamus laborum, dolores aliquid
-              amet odio, eos incidunt ab eius iure minus autem enim consectetur
-              aut maiores minima.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              commodi cupiditate facere exercitationem in sequi? Minus nobis quo
+              explicabo ullam deleniti voluptatibus magni? Nostrum
+              necessitatibus amet similique impedit, autem quos?
             </p>
           </div>
-          <img
-            src="https://images.unsplash.com/photo-1591629681585-50ca6d629e11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-            alt=""
-          />
         </div>
+        <img
+          src="https://images.unsplash.com/photo-1591629681585-50ca6d629e11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+          alt=""
+        />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
-          <FavouriteBorderIcon fontSize="small" />
+          <FavoriteBorderIcon fontSize="small" />
           <PublishIcon fontSize="small" />
         </div>
       </div>
-      {/* post body */}
     </div>
   );
 }
