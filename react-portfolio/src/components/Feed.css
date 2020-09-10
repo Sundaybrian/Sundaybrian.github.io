@@ -13,3 +13,19 @@
   border: 1px solid var(--twitter-background);
   padding: 15px 20px;
 }
+
+.feed__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* hide scrollbar for chrome safari opera */
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+/* hide scrollbar for IE, edege and firebox */
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
