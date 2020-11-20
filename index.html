@@ -1,361 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Marvel:400,700|Raleway:400,600"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Portfolio</title>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Marvel:400,700|Raleway:400,600" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-  <body id="page-top" data-spy="scroll" data-target="#navbarSupportedContent">
-    <nav class="navbar cf navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="#page-top">Sunday Brian</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <title>Portfolio</title>
+</head>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto cf">
-          <li class="nav-item active">
-            <a class="nav-link" href="#page-top"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
+<body id="page-top" data-spy="scroll" data-target="#navbarSupportedContent">
+  <nav class="navbar cf navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#page-top">Sunday Brian</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto cf">
+        <li class="nav-item active">
+          <a class="nav-link" href="#page-top">Home <span class="sr-only">(current)</span></a>
+        </li>
 
-    <div class="container-fluid mt-2">
-      <div class="text-center">
-        <img
-          src="img/sunday.jpg"
-          alt="profile-pic"
-          width="200"
-          class="profile-pic"
-        />
-        <h1>Sunday Brian</h1>
-        <h3>Life Learner/Debugger Supreme</h3>
-        <h5>Web Developer</h5>
-
-        <div class="text-center" style="margin: 20px;">
-          <a href="https://github.com/Sundaybrian" target="_blank">
-            Github Profile
-          </a>
-        </div>
-      </div>
-
-      <!-- ===============================projects================================================ -->
-
-      <section id="projects">
-        <!-- ====================================== start row imm =================================-->
-        <div class="row grey">
-          <div class="col-sm-8 offset-sm-2">
-            <div class="row">
-              <div class="col-lg-8">
-                <img src="img/tatuconnect.png" class="img-fluid mx-auto" />
-              </div>
-              <div class="col-lg-4">
-                <h2><a href="#" target="blank">IMM</a></h2>
-                <p>
-                  A CRM application that enables tatu connect track/resolve
-                  utility related issues with their customers
-                </p>
-                <h4>Technology</h4>
-                <p>
-                  IMM (Incident Management Module) is built using Django web
-                  framework, celery and redis for queueing tasks,
-                  django-channels for one-to-one chat, mailgun for sending
-                  emails, database postgres and deployed to an internal linux
-                  server. Bootstrap4 is the CSS framework of choice for this
-                  project
-                </p>
-              </div>
-            </div>
-            <div class="row text-center">
-              <div class="col-xs-12">
-                <img src="img/django-icon-0.jpg" class="techlogo" width="100" />
-                <img src="img/celery.png" class="techlogo" width="100" />
-                <img src="img/redis.png" class="techlogo" width="100" />
-                <img src="img/bootstrap.png" class="techlogo" width="100" />
-                <img src="img/postgresql.png" class="techlogo" width="100" />
-              </div>
-            </div>
-            <div class="row text-center" style="margin: 20px;">
-              <a class="btn btn-launch" href="#" target="_blank"
-                >Incident Management</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- =========================== end row grey 1 ==================================================-->
-
-        <!-- ====================================== start row beach resort =================================-->
-        <div class="row white">
-          <div class="col-sm-8 offset-sm-2">
-            <div class="row">
-              <div class="col-lg-8">
-                <img
-                  src="img/react-resort.png"
-                  class="img-fluid center-block"
-                />
-              </div>
-              <div class="col-lg-4">
-                <h2>
-                  <a
-                    href="https://react-resort-padawan.netlify.app/"
-                    target="_blank"
-                    >React Resort</a
-                  >
-                </h2>
-                <p>This is a beach resort website built in react</p>
-                <h4>Technology</h4>
-                <p>
-                  React resort is built using the react library,styled
-                  components, Javascript, contenful as the headless cms and
-                  deployed on netlify.
-                </p>
-              </div>
-            </div>
-            <div class="row text-center">
-              <div class="col-xs-12">
-                <img src="img/react-logo.png" class="techlogo" width="100" />
-                <img src="img/contentful.png" class="techlogo" width="100" />
-                <img
-                  src="img/Netlify-Logo.wine.png"
-                  class="techlogo"
-                  width="100"
-                />
-              </div>
-            </div>
-            <div class="row text-center" style="margin: 20px;">
-              <a
-                class="btn btn-launch"
-                href="https://react-resort-padawan.netlify.app/"
-                target="_blank"
-                >React Resort</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- =========================== row beach resort ===============================================-->
-
-        <!-- ====================================== start row away fans=================================-->
-        <div class="row grey">
-          <div class="col-sm-8 offset-sm-2">
-            <div class="row">
-              <div class="col-lg-8">
-                <img src="img/awayfans.png" class="img-fluid center-block" />
-              </div>
-              <div class="col-lg-4">
-                <h2>
-                  <a
-                    href="https://github.com/Sundaybrian/node-padawan"
-                    target="_blank"
-                    >Away fans</a
-                  >
-                </h2>
-                <p>
-                  An android application for football fans to get news about
-                  their local club
-                </p>
-                <h4>Technology</h4>
-                <p>
-                  Aways fans is built with ionic, angular.On the backend an
-                  express/nodejs app that scrapes football sites for the data,
-                  saves to mongodb and another nodejs server hosted on heroku
-                  that returns the info to the user via api calls to mongodb
-                </p>
-              </div>
-            </div>
-            <div class="row text-center">
-              <div class="col-xs-12">
-                <img src="img/angularjs.png" class="techlogo" width="100" />
-                <img src="img/ionic.png" class="techlogo" width="100" />
-                <img src="img/nodejs.png" class="techlogo" width="100" />
-                <img
-                  src="img/58481021cef1014c0b5e494b.png"
-                  class="techlogo"
-                  width="100"
-                />
-                <img src="img/heroku.png" class="techlogo" width="100" />
-              </div>
-            </div>
-            <div class="row text-center" style="margin: 20px;">
-              <a
-                class="btn btn-launch"
-                href="https://github.com/Sundaybrian/node-padawan"
-                target="_blank"
-                >Away Fans</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- =========================== end row away fans ==================================================-->
-
-        <!-- ====================================== start row ristorante =================================-->
-        <div class="row white">
-          <div class="col-sm-8 offset-sm-2">
-            <div class="row">
-              <div class="col-lg-8 col-lg-push-4">
-                <img src="img/ristorante.png" class="img-fluid center-block" />
-              </div>
-              <div class="col-lg-4 col-lg-pull-8">
-                <h2>
-                  <a
-                    href="https://mama-bear-d07e8.firebaseapp.com"
-                    target="_blank"
-                    >Ristorante</a
-                  >
-                </h2>
-                <p>
-                  This is a multi vendor restaurant application, where
-                  restaurant owners can register to the site, create a virtual
-                  shop and handle orders from the web dashboard.The orders will
-                  be placed from an android application
-                </p>
-                <h4>Technology</h4>
-                <p>
-                  Ristorante is built using angular8, firebase as the backend
-                  and also deployed on kofirebase hosting.Bootstrap4 is the css
-                  framework.
-                </p>
-              </div>
-            </div>
-            <div class="row text-center">
-              <div class="col-xs-12">
-                <img src="img/bootstrap.png" class="techlogo" width="100" />
-                <img src="img/angularjs.png" class="techlogo" width="100" />
-                <img src="img/firebase.png" class="techlogo" width="100" />
-              </div>
-            </div>
-
-            <div class="row text-center" style="margin: 20px;">
-              <a
-                class="btn btn-launch"
-                href="https://mama-bear-d07e8.firebaseapp.com"
-                target="_blank"
-                >Ristorante</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- =========================== end row ristorante ==================================================-->
-
-        <!-- ====================================== start watch dogs=================================-->
-        <div class="row grey">
-          <div class="col-sm-8 offset-sm-2">
-            <div class="row">
-              <div class="col-lg-8">
-                <img src="img/watchdogs.png" class="img-fluid center-block" />
-              </div>
-              <div class="col-lg-4">
-                <h2>
-                  <a
-                    href="https://watchdogs-news-app.herokuapp.com/"
-                    target="_blank"
-                    >WatchDogs</a
-                  >
-                </h2>
-                <p>
-                  This a web application that mimics a news site where users can
-                  read news articles from different sources
-                </p>
-                <h4>Technology</h4>
-                <p>
-                  WatchDogs is built using flask web framework, python requests
-                  to consume the news api, database used is postgresql,
-                  bootstrap4 is the css framework and deployed on heroku.
-                </p>
-              </div>
-            </div>
-            <div class="row text-center">
-              <div class="col-xs-12">
-                <img src="img/flask.png" class="techlogo" width="100" />
-                <img src="img/heroku.png" class="techlogo" width="100" />
-                <img src="img/bootstrap.png" class="techlogo" width="100" />
-                <img src="img/postgresql.png" class="techlogo" width="100" />
-              </div>
-            </div>
-            <div class="row text-center" style="margin: 20px;">
-              <a
-                class="btn btn-launch"
-                href="https://watchdogs-news-app.herokuapp.com/"
-                target="_blank"
-                >WatchDogs</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- =========================== end row flask 3==================================================-->
-      </section>
-
-      <!-- ===============================end projects================================================ -->
-
-      <!-- ===============================contact================================================ -->
-
-      <section id="contact" class="white">
-        <div class="row row-footer text-center">
-          <div class="col">
-            <div style="margin: 50px;">
-              <h3 style="margin: 50px 0 15px;">
-                I'm available for work, get in touch
-              </h3>
-
-              <a href="mailto:sundaypriest@outlook.com" target="_top">
-                sundaypriest@outlook.com
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row row-tools row-white">
-          <div class="col-sm-12 text-center">
-            <div class="social">
-              <a
-                href="https://www.linkedin.com/in/sunday-brian-13b74773/"
-                target="_blank"
-              >
-                <i class="fa fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/Sundaybrian" target="_blank">
-                <i class="fa fa-github"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===============================end contact================================================ -->
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-    <!-- =============================== container================================================ -->
+  </nav>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  <div class="container-fluid mt-2">
+    <div class="text-center">
+      <img src="img/sunday.jpeg" alt="profile-pic" width="200" class="profile-pic" />
+      <h1>Sunday Brian</h1>
+      <h5>Debugger Supreme/Web Developer</h5>
+
+      <div class="text-center" style="margin: 20px;">
+        <a href="https://github.com/Sundaybrian" target="_blank">
+          Github Profile
+        </a>
+      </div>
+    </div>
+
+    <!-- ===============================projects================================================ -->
+
+    <section id="projects">
+      <!-- ====================================== start row imm =================================-->
+      <div class="row grey">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/insta-pixels.png" class="img-fluid mx-auto" />
+            </div>
+            <div class="col-lg-4">
+              <h2><a href="#" target="blank">Pixels</a></h2>
+              <p>
+                Instagram Clone
+              </p>
+              <h4>Technology</h4>
+              <p>
+                Insta pixels is built using the django web framework, bootstrap for the css and postgresql for the
+                database. Hosting platform is heroku
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <img src="img/django-icon-0.jpg" class="techlogo" width="100" />
+              <img src="img/bootstrap.png" class="techlogo" width="100" />
+              <img src="img/postgresql.png" class="techlogo" width="100" />
+              <img src="img/heroku.png" class="techlogo" width="100" />
+            </div>
+          </div>
+          <div class="row text-center" style="margin: 20px;">
+            <a class="btn btn-launch" href="https://instant-pixels.herokuapp.com/" target="_blank">Pixels</a>
+            <a class="btn btn-code" href="https://github.com/Sundaybrian/pixels" target="_blank">Github</a>
+          </div>
+        </div>
+      </div>
+      <!-- =========================== end row grey 1 ==================================================-->
+
+      <!-- ====================================== start row beach resort =================================-->
+      <div class="row white">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/react-resort.png" class="img-fluid center-block" />
+            </div>
+            <div class="col-lg-4">
+              <h2>
+                <a href="https://react-resort-padawan.netlify.app/" target="_blank">React Resort</a>
+              </h2>
+              <p>This is a beach resort website built in react</p>
+              <h4>Technology</h4>
+              <p>
+                React resort is built using the react library,styled
+                components, Javascript, contenful as the headless cms and
+                deployed on netlify.
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <img src="img/react-logo.png" class="techlogo" width="100" />
+              <img src="img/contentful.png" class="techlogo" width="100" />
+              <img src="img/Netlify-Logo.wine.png" class="techlogo" width="100" />
+            </div>
+          </div>
+          <div class="row text-center" style="margin: 20px;">
+            <a class="btn btn-launch" href="https://react-resort-padawan.netlify.app/" target="_blank">React Resort</a>
+            <a href="https://github.com/Sundaybrian/react-resort" class="btn btn-code" target="_blank">Github</a>
+          </div>
+        </div>
+      </div>
+      <!-- =========================== row beach resort ===============================================-->
+
+      <!-- ====================================== start row away fans=================================-->
+      <div class="row grey">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/awayfans.png" class="img-fluid center-block" />
+            </div>
+            <div class="col-lg-4">
+              <h2>
+                <a href="https://github.com/Sundaybrian/node-padawan" target="_blank">Away fans</a>
+              </h2>
+              <p>
+                An android application for football fans to get news about
+                their local club
+              </p>
+              <h4>Technology</h4>
+              <p>
+                Aways fans is built with ionic, angular.On the backend an
+                express/nodejs app that scrapes football sites for the data,
+                saves to mongodb and another nodejs server hosted on heroku
+                that returns the info to the user via api calls to mongodb
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <img src="img/angularjs.png" class="techlogo" width="100" />
+              <img src="img/ionic.png" class="techlogo" width="100" />
+              <img src="img/nodejs.png" class="techlogo" width="100" />
+              <img src="img/58481021cef1014c0b5e494b.png" class="techlogo" width="100" />
+              <img src="img/heroku.png" class="techlogo" width="100" />
+            </div>
+          </div>
+          <div class="row text-center" style="margin: 20px;">
+            <a class="btn btn-launch" href="https://github.com/Sundaybrian/node-padawan" target="_blank">Away Fans</a>
+            <a class="btn btn-code" href="https://github.com/Sundaybrian/away-fans/tree/master/apk"
+              target="_blank">Apk</a>
+          </div>
+        </div>
+      </div>
+      <!-- =========================== end row away fans ==================================================-->
+
+      <!-- ====================================== start row ristorante =================================-->
+      <div class="row white">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-lg-8 col-lg-push-4">
+              <img src="img/ristorante.png" class="img-fluid center-block" />
+            </div>
+            <div class="col-lg-4 col-lg-pull-8">
+              <h2>
+                <a href="https://mama-bear-d07e8.firebaseapp.com" target="_blank">Ristorante</a>
+              </h2>
+              <p>
+                This is a multi vendor restaurant application, where
+                restaurant owners can register to the site, create a virtual
+                shop and handle orders from the web dashboard.The orders will
+                be placed from an android application
+              </p>
+              <h4>Technology</h4>
+              <p>
+                Ristorante is built using angular8, firebase as the backend
+                and also deployed on kofirebase hosting.Bootstrap4 is the css
+                framework.
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <img src="img/bootstrap.png" class="techlogo" width="100" />
+              <img src="img/angularjs.png" class="techlogo" width="100" />
+              <img src="img/firebase.png" class="techlogo" width="100" />
+            </div>
+          </div>
+
+          <div class="row text-center" style="margin: 20px;">
+            <a class="btn btn-launch" href="https://mama-bear-d07e8.firebaseapp.com" target="_blank">Ristorante</a>
+            <a class="btn btn-code" href="https://github.com/Sundaybrian/ristorante" target="_blank">Github</a>
+          </div>
+        </div>
+      </div>
+      <!-- =========================== end row ristorante ==================================================-->
+
+      <!-- ====================================== start watch dogs=================================-->
+      <div class="row grey">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="img/watchdogs.png" class="img-fluid center-block" />
+            </div>
+            <div class="col-lg-4">
+              <h2>
+                <a href="https://watchdogs-news-app.herokuapp.com/" target="_blank">WatchDogs</a>
+              </h2>
+              <p>
+                This a web application that mimics a news site where users can
+                read news articles from different sources
+              </p>
+              <h4>Technology</h4>
+              <p>
+                WatchDogs is built using flask web framework, python requests
+                to consume the news api, database used is postgresql,
+                bootstrap4 is the css framework and deployed on heroku.
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <img src="img/flask.png" class="techlogo" width="100" />
+              <img src="img/heroku.png" class="techlogo" width="100" />
+              <img src="img/bootstrap.png" class="techlogo" width="100" />
+              <img src="img/postgresql.png" class="techlogo" width="100" />
+            </div>
+          </div>
+          <div class="row text-center" style="margin: 20px;">
+            <a class="btn btn-launch" href="https://watchdogs-news-app.herokuapp.com/" target="_blank">WatchDogs</a>
+            <a class="btn btn-code" href="https://github.com/Sundaybrian/watchdogs-news-app" target="_blank">Github</a>
+          </div>
+        </div>
+      </div>
+      <!-- =========================== end row flask 3==================================================-->
+    </section>
+
+    <!-- ===============================end projects================================================ -->
+
+    <!-- ===============================contact================================================ -->
+
+    <section id="contact" class="white">
+      <div class="row row-footer text-center">
+        <div class="col">
+          <div style="margin: 50px;">
+            <h3 style="margin: 50px 0 15px;">
+              I'm available for work, get in touch
+            </h3>
+
+            <a href="mailto:sundaypriest@outlook.com" target="_top">
+              sundaypriest@outlook.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-tools row-white">
+        <div class="col-sm-12 text-center">
+          <div class="social">
+            <a href="https://www.linkedin.com/in/sunday-brian-13b74773/" target="_blank">
+              <i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Sundaybrian" target="_blank">
+              <i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================end contact================================================ -->
+  </div>
+  <!-- =============================== container================================================ -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>

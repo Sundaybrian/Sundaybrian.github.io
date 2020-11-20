@@ -1,57 +1,69 @@
 * {
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 html,
 body {
-  /* scroll-behavior: smooth; */
-  font-family: "Raleway", sans-serif;
-  background: white;
+    /* scroll-behavior: smooth; */
+    font-family: "Raleway", sans-serif;
+    background: white;
 }
 
 p {
-  color: #4a4e69;
-  font-family: "Marvel", sans-serif;
-  font-size: 1.3em;
-  font-weight: 300;
+    color: #4a4e69;
+    font-family: "Marvel", sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
 }
 
 .profile-pic {
-  box-shadow: 0px 4px 6px 2px lightgrey;
-  border-radius: 50%;
+    box-shadow: 0px 4px 6px 2px lightgrey;
+    border-radius: 50%;
 }
 
 h1 {
-  font-size: 1.75em;
+    font-size: 1.75em;
 }
 
 .white {
-  background-color: white;
-  padding: 65px 10px;
+    background-color: white;
+    padding: 65px 10px;
 }
 
 .grey {
-  background-color: lightgrey;
-  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-  padding: 65px 10px;
+    background-color: lightgrey;
+    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    padding: 65px 10px;
 }
 
-.btn-launch {
-  width: 100%;
-  max-width: 200px;
-  background-color: #549657;
-  color: white;
-  box-shadow: 0px 2px 5px 1px darkgrey;
+.btn-launch,
+.btn-code {
+    width: 100%;
+    max-width: 200px;
+    background-color: #549657;
+    color: white;
+    box-shadow: 0px 2px 5px 1px darkgrey;
 }
 
 .btn-launch:hover,
 .btn-launch:focus {
-  color: white;
-  background: #3d7140;
+    color: white;
+    background: #3d7140;
+}
+
+.btn-code {
+    margin-left: 8px;
+    background-color: #951c49;
+}
+
+.btn-code:hover,
+.btn-code:focus {
+    color: white;
+    background: #ad2758;
 }
 
 /************** contact section *********************************/
@@ -84,54 +96,59 @@ h1 {
 } */
 
 .social a {
-  cursor: pointer;
-  padding: 0px 20px;
-  display: inline-block;
+    cursor: pointer;
+    padding: 0px 20px;
+    display: inline-block;
 }
 
 i.fa {
-  font-size: 28px;
-  color: #951c49;
-  transform: scale(0.9);
-  transition: 0.3s;
+    font-size: 28px;
+    color: #951c49;
+    transform: scale(0.9);
+    transition: 0.3s;
 }
 
 i.fa:hover {
-  font-size: 28px;
-  color: #00ff8c;
-  transform: scale(1.2);
+    font-size: 28px;
+    color: #00ff8c;
+    transform: scale(1.2);
 }
 
 /* media queries */
 
 @media (max-width: 684px) {
-  nav {
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100%;
-  }
+    nav {
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+    }
 
-  nav #brand {
-    display: none;
-  }
+    nav #brand {
+        display: none;
+    }
 
-  #nav-links {
-    width: 100%;
-  }
+    #nav-links {
+        width: 100%;
+    }
 
-  #nav-links ul {
-    margin-left: 40px;
-  }
+    #nav-links ul {
+        margin-left: 40px;
+    }
 
-  #nav-links ul li {
-    display: inline-block;
-    font-size: 14px;
-  }
+    #nav-links ul li {
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .btn-code {
+        margin-top: 11px;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 340px) {
-  nav #brand a {
-    font-size: 19px;
-  }
+    nav #brand a {
+        font-size: 19px;
+    }
 }
